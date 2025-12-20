@@ -5,17 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Rounds Dating LLC</title>
     <style>
-      body { font-family: -apple-system, system-ui, Helvetica, Arial, sans-serif; padding: 24px; max-width: 720px; margin: 0 auto; }
-      a { display: inline-block; margin: 8px 0; }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background: #000;
+        color: #fff;
+        font-family: -apple-system, system-ui, Helvetica, Arial, sans-serif;
+
+        display: flex;
+        flex-direction: column;
+      }
+
+      /* Center area */
+      .main {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 24px;
+      }
+
+      .logo {
+        max-width: 520px;
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      /* Bottom links */
+      .footer {
+        padding: 24px;
+        display: flex;
+        justify-content: center;
+      }
+
+      .footer ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .footer a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 16px;
+      }
+
+      .footer a:hover {
+        text-decoration: underline;
+      }
     </style>
   </head>
   <body>
-    <h1>Rounds Dating LLC</h1>
-    <p>Policies:</p>
-    <ul>
-      <li><a href="privacy/">Privacy Policy</a></li>
-      <li><a href="terms/">Terms of Service</a></li>
-      <li><a href="delete-account/">Delete your account</a></li>
-    </ul>
+    <main class="main">
+      <img class="logo" src="Rounds-C3.png" alt="Rounds logo" />
+    </main>
+
+    <footer class="footer">
+      <ul>
+        <li><a href="privacy/">Privacy Policy</a></li>
+        <li><a href="terms/">Terms of Service</a></li>
+        <li><a href="delete-account/">Delete your account</a></li>
+      </ul>
+    </footer>
   </body>
 </html>
